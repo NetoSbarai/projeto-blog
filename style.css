@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'typewriter';
+    src: url(fonts/AA_typewriter.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'topsecret';
+    src: url(fonts/Top\ Secret.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0:#807d7d6c;
+    --cor1:#F2B705;
+    --cor2:#F29F05;
+    --cor3:#A66D03;
+    --cor4:#737373;
+    --cor5:#404040;
+
+    --fonte-titulos: 'topsecret';
+    --fonte-paragrafos: 'typewriter'
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-paragrafos);
+}
+
+body.home {
+    background-color: var(--cor0)
+}
+
+header {
+    background-size: cover;
+    background-position-y: center;
+    background-image: url('imagens/tapes3.png');
+    min-height: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    background-color: #F6D110;
+    margin: 0px 110px 0px 110px;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0,0,0,0.363);
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    transition-duration: 0.3s;
+}
+nav > a:hover {
+    background-color: var(--cor2);
+    color: white;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-position: center;
+    background-image: url('imagens/papel-velho.png');
+}
+
+h1 {
+    font-family: var(--fonte-titulos);
+    text-align: center;
+}
+h2{
+    font-family: 'topsecret';
+    text-align: center;
+}
+p {
+    font-family: 'typewriter';
+    text-indent: 30px;
+}
